@@ -2,6 +2,15 @@
 
 int main()
 {
-
+    for (int i = 1; i < 100; ++i)
+    {
+        bool threeDivisible = (i % 3 == 0);
+        bool fiveDivisible = (i % 5 == 0);
+        if (threeDivisible)
+            std::cout << "Fizz";
+        if (fiveDivisible)
+            std::cout << "Buzz";
+        std::cout << std::endl;
+    }
     return 0;
 }
