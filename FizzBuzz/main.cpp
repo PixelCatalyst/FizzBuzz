@@ -10,6 +10,8 @@ int main()
             std::cout << "Fizz";
         if (fiveDivisible)
             std::cout << "Buzz";
+        if ((threeDivisible || fiveDivisible) == false)
+            std::cout << i;
         std::cout << std::endl;
     }
     return 0;
