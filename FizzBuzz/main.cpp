@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 int main()
 {
@@ -16,16 +17,21 @@ int main()
         min = temp;
     }
 
+    std::string output;
     for (int i = min; i <= max; ++i)
     {
-        bool threeDivisible = (i % 3 == 0);
-        bool fiveDivisible = (i % 5 == 0);
-        if (threeDivisible)
-            std::cout << "Fizz";
-        if (fiveDivisible)
-            std::cout << "Buzz";
-        if ((threeDivisible || fiveDivisible) == false)
+        if (i % 3 == 0)
+            output += "Fizz";
+        if (i % 5 == 0)
+            output += "Buzz";
+
+        if (output.empty())
             std::cout << i;
+        else
+        {
+            std::cout << output;
+            output.clear();
+        }
         std::cout << std::endl;
     }
     system("pause");
