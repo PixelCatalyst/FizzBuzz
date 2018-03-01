@@ -14,5 +14,7 @@ int main()
             std::cout << i;
         std::cout << std::endl;
     }
+    system("pause");
+
     return 0;
 }
