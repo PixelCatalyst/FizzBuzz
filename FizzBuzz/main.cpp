@@ -24,6 +24,10 @@ int main()
             output += "Fizz";
         if (i % 5 == 0)
             output += "Buzz";
+        if (i % 7 == 0)
+            output += "Bizz";
+        if (i % 11 == 0)
+            output += "Fuzz";
 
         if (output.empty())
             std::cout << i;
